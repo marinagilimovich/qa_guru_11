@@ -18,7 +18,7 @@ https://www.profitero.com/
 <img src="src/test/resources/img/allure3.png" width="40%"> <img src="src/test/resources/img/allure4.png" width="40%">
 
 # Видео прохождения теста:
-![Video](src/test/resources/img/video.mp4)
+![Video](src/test/resources/img/video.gif)
 
 # Cообщение, отправленное в Telegram:
 <img src="src/test/resources/img/telegram.png" width="30%">
