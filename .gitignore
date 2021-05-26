@@ -19,7 +19,7 @@
 *.tar.gz
 *.rar
 *.iml
-
+!allure-notifications-2.2.3.jar
 # Project gen files
 .idea
 .allure/
