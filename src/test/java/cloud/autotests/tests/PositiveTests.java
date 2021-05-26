@@ -1,6 +1,6 @@
 package cloud.autotests.tests;
 
-import org.junit.jupiter.api.Disabled;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -11,7 +11,8 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-public class PositiveTests {
+@Story("Main page test")
+public class PositiveTests extends TestBase {
     @Test
     @Tag("ui")
     @DisplayName("Opening the main page")
