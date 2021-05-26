@@ -19,7 +19,6 @@ https://www.profitero.com/
 
 # Видео прохождения теста:
 <img src="src/test/resources/img/video.gif" width="60%">
-![Video](src/test/resources/img/video.gif)
 
 # Cообщение, отправленное в Telegram:
 <img src="src/test/resources/img/telegram.png" width="30%">
