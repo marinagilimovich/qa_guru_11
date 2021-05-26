@@ -14,10 +14,8 @@ https://www.profitero.com/
 `Java` `Gradle` `Junit5` `Selenide` `Selenoid` `Allure Report` `Jenkins` `Telegram Bot`
 
 # Отчет Allure report:
-<img src="src/test/resources/img/allure1.png" width="40%">
-<img src="src/test/resources/img/allure2.png" width="40%">
-<img src="src/test/resources/img/allure3.png" width="40%">
-<img src="src/test/resources/img/allure4.png" width="40%">
+<img src="src/test/resources/img/allure1.png" width="40%"> <img src="src/test/resources/img/allure2.png" width="40%">
+<img src="src/test/resources/img/allure3.png" width="40%"> <img src="src/test/resources/img/allure4.png" width="40%">
 
 # Видео прохождения теста:
 ![Video](src/test/resources/img/video.mp4)
