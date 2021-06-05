@@ -1,27 +1,26 @@
-# Пример тестирования сайта с отправкой результатов в телеграмм-чат
-https://www.profitero.com/
+## **The example of [Profitero](https://www.profitero.com) web-site testing**
 
-# Используемые технологии:
+### Used technologies:
 ![Java](src/test/resources/img/icons/Java.png)
-![Gradle](src/test/resources/img/icons/Gradle.png)
 ![JUnit5](src/test/resources/img/icons/JUnit5.png)
-![Selenoid](src/test/resources/img/icons/Selenoid.png)
 ![Selenide](src/test/resources/img/icons/Selenide.png)
-![Allure_Report](src/test/resources/img/icons/Allure_Report.png)
+![Gradle](src/test/resources/img/icons/Gradle.png)
+![Selenoid](src/test/resources/img/icons/Selenoid.png)
 ![Jenkins](src/test/resources/img/icons/Jenkins.png)
+![Allure_Report](src/test/resources/img/icons/Allure_Report.png)
 ![Telegram](src/test/resources/img/icons/Telegram.png)
 
-`Java` `Gradle` `Junit5` `Selenide` `Selenoid` `Allure Report` `Jenkins` `Telegram Bot`
+`Java` `Junit5` `Selenide` `Gradle` `Selenoid` `Jenkins` `Allure Report` `Telegram Bot`
 
-# Отчет Allure report:
+### [Jenkins](https://jenkins.autotests.cloud/job/c05-marinahil-hw11) project
+
+### [Allure](https://jenkins.autotests.cloud/job/c05-marinahil-hw11/7/allure) report:
 <img src="src/test/resources/img/allure1.png" width="40%"> <img src="src/test/resources/img/allure2.png" width="40%">
 <img src="src/test/resources/img/allure3.png" width="40%"> <img src="src/test/resources/img/allure4.png" width="40%">
 
-# Видео прохождения теста:
+### Video of a running test:
 <img src="src/test/resources/img/video.gif" width="60%">
 
-# Cообщение, отправленное в Telegram:
+### Message sent to Telegram:
 <img src="src/test/resources/img/telegram.png" width="30%">
 
-# Ссылка на проект в Jenkins:
-https://jenkins.autotests.cloud/job/c05-marinahil-hw11
