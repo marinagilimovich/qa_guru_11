@@ -1,6 +1,5 @@
-package cloud.autotests.helpers;
+package profitero.site.autotests.helpers;
 
-import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -69,5 +68,4 @@ public class AttachmentsHelper {
         }
         return null;
     }
-
 }

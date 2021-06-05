@@ -4,7 +4,7 @@ plugins {
 }
 
 repositories {
-    maven {url = "https://dl.bintray.com/qameta/maven-unstable/"}
+    maven { url = "https://dl.bintray.com/qameta/maven-unstable/" }
     mavenCentral()
 }
 
@@ -44,7 +44,6 @@ tasks.withType(JavaCompile) {
 tasks.withType(Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform()
-//    systemProperty "chromeoptions.prefs", "intl.accept_languages=en"
 
     if (System.getProperty("threads") != null) {
         systemProperties += [
@@ -58,7 +57,6 @@ tasks.withType(Test) {
 
     testLogging {
         lifecycle {
-//            events "started", "failed"
             events "started", "skipped", "failed", "standard_error", "standard_out"
             exceptionFormat "short"
         }

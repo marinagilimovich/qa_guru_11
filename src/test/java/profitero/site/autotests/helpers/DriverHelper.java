@@ -1,8 +1,7 @@
-package cloud.autotests.helpers;
+package profitero.site.autotests.helpers;
 
+import profitero.site.autotests.config.DriverConfig;
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
-import cloud.autotests.config.DriverConfig;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -34,7 +33,6 @@ public class DriverHelper {
 
 
     public static String getWebRemoteDriver() {
-        // https://%s:%s@selenoid.autotests.cloud/wd/hub/
         return String.format(getDriverConfig().webRemoteDriverUrl(),
                 getDriverConfig().webRemoteDriverUser(),
                 getDriverConfig().webRemoteDriverPassword());
@@ -52,8 +50,8 @@ public class DriverHelper {
         return !getVideoUrl().equals("");
     }
 
-    public static String getSessionId(){
-        return ((RemoteWebDriver) getWebDriver()).getSessionId().toString().replace("selenoid","");
+    public static String getSessionId() {
+        return ((RemoteWebDriver) getWebDriver()).getSessionId().toString().replace("selenoid", "");
     }
 
     public static String getConsoleLogs() {
@@ -63,7 +61,6 @@ public class DriverHelper {
     public static void configureDriver() {
         addListener("AllureSelenide", new AllureSelenide());
 
-//        Configuration.baseUrl = TestData.getWebUrl();
         Configuration.browser = getDriverConfig().webBrowser();
         Configuration.browserVersion = getDriverConfig().webBrowserVersion();
         Configuration.browserSize = getDriverConfig().webBrowserSize();

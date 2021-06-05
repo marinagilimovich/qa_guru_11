@@ -1,4 +1,4 @@
-package cloud.autotests.tests;
+package profitero.site.autotests.tests;
 
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
@@ -12,13 +12,15 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 @Story("Main page test")
-public class PositiveTests extends TestBase {
+public class MainPageTests extends TestBase {
+    String mainPageURL = "https://www.profitero.com/";
+
     @Test
     @Tag("ui")
     @DisplayName("Opening the main page")
     public void checkMainPageTitleTest() {
         step("Open the main page", () -> {
-            open("https://www.profitero.com/");
+            open(mainPageURL);
         });
 
         step("Check product title", () -> {
@@ -32,7 +34,7 @@ public class PositiveTests extends TestBase {
     @DisplayName("Checking menu items on the main page")
     public void checkMenuItemsTest() {
         step("Open the main page", () -> {
-            open("https://www.profitero.com/");
+            open(mainPageURL);
         });
 
         step("Check names of all menu items", () -> {
@@ -49,7 +51,7 @@ public class PositiveTests extends TestBase {
     @DisplayName("Checking Login page is available")
     public void loginPageAvailabilityTest() {
         step("Open the main page", () -> {
-            open("https://www.profitero.com/");
+            open(mainPageURL);
         });
 
         step("Go to Login page", () -> {
@@ -66,7 +68,7 @@ public class PositiveTests extends TestBase {
     @DisplayName("Checking validation of required fields on Login page")
     public void loginWithEmptyFieldTest() {
         step("Open the main page", () -> {
-            open("https://www.profitero.com/");
+            open(mainPageURL);
         });
 
         step("Go to Login page", () -> {
@@ -79,11 +81,9 @@ public class PositiveTests extends TestBase {
         });
 
         step("Check that the correct error messages appear", () -> {
-            $$(".error-msg").first().shouldHave(text("Please enter a value."));
+            $$(".error-msg").get(0).shouldHave(text("Please enter a value."));
             $$(".error-msg").get(1).shouldHave(text("Please enter a value."));
         });
-
-
     }
 
     @Test
@@ -91,7 +91,7 @@ public class PositiveTests extends TestBase {
     @DisplayName("Successful opening Request Demo page")
     public void requestDemoPageTest() {
         step("Open the main page", () -> {
-            open("https://www.profitero.com/");
+            open(mainPageURL);
         });
 
         step("Go to Request Demo page", () -> {
@@ -103,5 +103,4 @@ public class PositiveTests extends TestBase {
             $("#hs_cos_wrapper_widget_1612362065267_ p").shouldHave(text("Book your demo to see how these brands"));
         });
     }
-
 }
